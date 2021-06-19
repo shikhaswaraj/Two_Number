@@ -1,0 +1,15 @@
+try:
+    for _ in range(int(input())):
+        a, b, n = map(int, input().split())
+        if n%2==0:
+            if a>=b:
+                print(int(a/b))
+            else:
+                print(int(b/a))
+        else:
+            if 2*a>=b:
+                print(int(2*a/b))
+            else:
+                print(int(b/(2*a)))
+except:
+    pass
